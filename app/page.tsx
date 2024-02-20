@@ -1,6 +1,6 @@
 "use client";
 import React, { FC } from "react";
-// import Heading from "../utils/Heading";
+import Heading from "../app/utils/Heading";
 // import AdminSidebar from "../component/Admin/Sidebar/AdminSidebar";
 // import AdminProtected from "../hooks/adminProtected";
 // import DashboardHero from "../component/Admin/DashboardHero";
@@ -10,12 +10,12 @@ type props = {};
 const Page: FC<props> = () => {
   return (
     <div>
-      {/* <AdminProtected>
+      {/* <AdminProtected> */}
         <Heading
           title={`e-Shikhon - Admin`}
           description="Learning"
-          keywords="React,Fron end ,"
-        /> */}
+          keywords="React,Fron end ,etc"
+        />
 
         <div className="flex h-[200vh] ">
           <div className="1500px:w-[16%] w-1/2">
