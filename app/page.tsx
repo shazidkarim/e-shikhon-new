@@ -1,13 +1,13 @@
 "use client";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import Heading from "../app/utils/Heading";
-// import AdminSidebar from "../component/Admin/Sidebar/AdminSidebar";
-// import AdminProtected from "../hooks/adminProtected";
-// import DashboardHero from "../component/Admin/DashboardHero";
-
+import Header from "./componcents/Header";
 type props = {};
 
 const Page: FC<props> = () => {
+  const [open, setOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState(0);
+  const [route, setRoute] = useState("Login");
   return (
     <div>
       {/* <AdminProtected> */}
@@ -16,7 +16,12 @@ const Page: FC<props> = () => {
           description="Learning"
           keywords="React,Fron end ,etc"
         />
-
+        <Header 
+         open={open}
+         setOpen={setOpen}
+         activeItem={activeItem}
+         setRoute={setRoute}
+         route={route}/>
         <div className="flex h-[200vh] ">
           <div className="1500px:w-[16%] w-1/2">
             {/* <AdminSidebar /> */}
